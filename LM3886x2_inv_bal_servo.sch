@@ -168,17 +168,6 @@ F 3 "~" H 1350 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R3
-U 1 1 64A1AA11
-P 1650 3000
-F 0 "R3" V 1454 3000 50  0000 C CNN
-F 1 "1K" V 1545 3000 50  0000 C CNN
-F 2 "" H 1650 3000 50  0001 C CNN
-F 3 "~" H 1650 3000 50  0001 C CNN
-	1    1650 3000
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C_Small C13
 U 1 1 64A1AF24
 P 1500 3200
@@ -199,17 +188,6 @@ F 1 "1K" V 1245 4000 50  0000 C CNN
 F 2 "" H 1350 4000 50  0001 C CNN
 F 3 "~" H 1350 4000 50  0001 C CNN
 	1    1350 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 64A1C54A
-P 1650 4000
-F 0 "R4" V 1454 4000 50  0000 C CNN
-F 1 "1K" V 1545 4000 50  0000 C CNN
-F 2 "" H 1650 4000 50  0001 C CNN
-F 3 "~" H 1650 4000 50  0001 C CNN
-	1    1650 4000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -243,16 +221,12 @@ Wire Wire Line
 	1500 3100 1500 3000
 Connection ~ 1500 3000
 Wire Wire Line
-	1500 3000 1550 3000
-Wire Wire Line
 	1500 3300 1500 3450
 Wire Wire Line
 	1450 4000 1500 4000
 Wire Wire Line
 	1500 3700 1500 4000
 Connection ~ 1500 4000
-Wire Wire Line
-	1500 4000 1550 4000
 $Comp
 L Device:C_Small C15
 U 1 1 64A327D9
@@ -311,8 +285,6 @@ Connection ~ 2200 3450
 Wire Wire Line
 	2200 3450 2200 3550
 Wire Wire Line
-	1750 3000 1900 3000
-Wire Wire Line
 	2200 3100 2200 3000
 Wire Wire Line
 	2200 3000 2100 3000
@@ -320,8 +292,6 @@ Wire Wire Line
 	2200 3750 2200 4000
 Wire Wire Line
 	2200 4000 2100 4000
-Wire Wire Line
-	1900 4000 1750 4000
 $Comp
 L Device:R_Small R8
 U 1 1 64A43227
@@ -1726,4 +1696,27 @@ Gain = 2 * 0.5 = 1
 Wire Wire Line
 	9750 3000 10150 3000
 Connection ~ 9750 3000
+Wire Wire Line
+	1500 3000 1900 3000
+Wire Wire Line
+	1500 4000 1900 4000
+$Comp
+L power:GND #PWR?
+U 1 1 64EE1A26
+P 1300 3500
+F 0 "#PWR?" H 1300 3250 50  0001 C CNN
+F 1 "GND" H 1305 3327 50  0001 C CNN
+F 2 "" H 1300 3500 50  0001 C CNN
+F 3 "" H 1300 3500 50  0001 C CNN
+	1    1300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3500 1300 3450
+Wire Wire Line
+	1300 3450 1500 3450
+Text Notes 7550 1450 0    50   ~ 0
+JFET input opamp
+Text Notes 7550 4250 0    50   ~ 0
+JFET input opamp
 $EndSCHEMATC
