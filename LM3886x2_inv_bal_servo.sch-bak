@@ -255,7 +255,7 @@ L Device:R_Small R5
 U 1 1 64A3536F
 P 2000 3450
 F 0 "R5" V 1804 3450 50  0000 C CNN
-F 1 "1M" V 1895 3450 50  0000 C CNN
+F 1 "2M2" V 1895 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2000 3450 50  0001 C CNN
 F 3 "~" H 2000 3450 50  0001 C CNN
 	1    2000 3450
@@ -530,8 +530,8 @@ $Comp
 L Device:CP_Small C17
 U 1 1 64A800A8
 P 7050 1600
-F 0 "C17" V 7275 1600 50  0000 C CNN
-F 1 "100u" V 7184 1600 50  0000 C CNN
+F 0 "C17" H 7250 1700 50  0000 C CNN
+F 1 "100u" H 7250 1600 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 7050 1600 50  0001 C CNN
 F 3 "~" H 7050 1600 50  0001 C CNN
 	1    7050 1600
@@ -1784,4 +1784,57 @@ Connection ~ 2700 3300
 Wire Wire Line
 	2700 3750 2700 3800
 Connection ~ 2700 3800
+Wire Wire Line
+	7050 1700 7050 1800
+Connection ~ 7050 1800
+Wire Wire Line
+	6900 1800 7050 1800
+Wire Wire Line
+	6700 1800 6600 1800
+Wire Wire Line
+	6600 1800 6600 1650
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 64A55F61
+P 750 7700
+F 0 "H3" H 850 7746 50  0000 L CNN
+F 1 "MountingHole" H 850 7655 50  0000 L CNN
+F 2 "" H 750 7700 50  0001 C CNN
+F 3 "~" H 750 7700 50  0001 C CNN
+	1    750  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 64A56BA7
+P 750 7900
+F 0 "H4" H 850 7946 50  0000 L CNN
+F 1 "MountingHole" H 850 7855 50  0000 L CNN
+F 2 "" H 750 7900 50  0001 C CNN
+F 3 "~" H 750 7900 50  0001 C CNN
+	1    750  7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 64A5762B
+P 750 7500
+F 0 "H2" H 850 7546 50  0000 L CNN
+F 1 "MountingHole" H 850 7455 50  0000 L CNN
+F 2 "" H 750 7500 50  0001 C CNN
+F 3 "~" H 750 7500 50  0001 C CNN
+	1    750  7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 64A57A93
+P 750 7300
+F 0 "H1" H 850 7346 50  0000 L CNN
+F 1 "MountingHole" H 850 7255 50  0000 L CNN
+F 2 "" H 750 7300 50  0001 C CNN
+F 3 "~" H 750 7300 50  0001 C CNN
+	1    750  7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
